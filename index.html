@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Ayush Raj</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Ayush Raj</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/ayush.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Ayush Raj</h1>
+        <p class="section__text__p2">UG Student Researcher</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/ResumeAyushRajBiomed.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/ayush09062004'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/ProfilePic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years 
+              <br />UG Student Researcher @IIT BHU<br />Research Intern @IIT Roorkee</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Integrated Dual Degree<br />Biomedical Engineering <br/>@IIT BHU</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>Hello! I'm Ayush Raj, a 3rd-year undergraduate student at IIT BHU. My passions lie at the intersection of technology and healthcare, where I am deeply invested in leveraging <I><b>Machine Learning and AI for healthcare</b></I> research. Currently, I am working on a project focused on the early detection of Cervical Cancer. My interests also span across <I><b>Neurosciences and Psychology</b></I>. I have worked on a project related to Autism and recently interned at IIT Roorkee, where I utilized an Eye Tracker to explore Contextual Cueing. Driven by a mission to create impactful healthcare solutions, I aim to utilize my skills in AI to build products that serve social causes and improve lives.</p>
+        
+        <h4>For a healthier tomorrow, wellness starts from today!!!</h4>
+        <p>सर्वे भवन्तु सुखिनः सर्वे सन्तु निरामयाः।</p>
+        <p>सर्वे भद्राणि पश्यन्तु मा कश्चित् दुःखभाग् भवेत्।।</p>
+
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">UG Student Researcher</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/image.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>UG Research Intern at IIT Roorkee</h3>
+                  <p><b>Project:</b> Eye Gaze Detection based Behavior Analysis</p>
+                  <p><b>Eye Tracking:</b> Eye Tracker(Tobii Pro Fusion), Eye Tracker Manager(Tobii Pro Lab & Titta)</p>
+                  <p><b>Experiment Design:</b> MATLAB(PsychtoolBox)</p>
+                  <p><b>Data Analysis:</b> Ms-Excel,Python</p>
+                  <p><b>Supervision:</b> Dr. Tony Thomas & Ms. Ananya Mishra(Phd Scholar) of Dept. of Humanities & Social Sciences, IIT Roorkee</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/image.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>UG Exploratory Project at IIT BHU</h3>
+                  <p><b>Project:</b> Characterizing ASD subtypes using morphological features from sMRI by unsupervised learning</p>
+                  <p><b>Skills Acquired:</b> Unsupervised Learning(Scikit-learn library), Feature Engineering(using Pandas & Numpy), Data Visualization(Matplotlib.pyplot & Seaborn) using Python & Research Paper writing(using Latex)</p>
+                  <p><b>Key Highlights:</b> Paper titled "Characterizing ASD subtypes using morphological features from sMRI by unsupervised learning" accepted for publication in IEEE I2MTC 2024 Conferece, Glassgow, Scotland as first author (Final publication halted due to financial constraints) </p>
+                  <p><b>Supervision:</b> Dr. Jac Fredo AR, School of Biomedical Engineering, IIT BHU</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/image.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Independent Project</h3>
+                  <p><b>Project:</b> Categorical Values based Heart Disease & Diabetes prediction using supervised learning</p>
+                  <p><b>Skills Acquired:</b> Feature Engineering(using pandas and numpy), Data Visualization(Matplotlib & Seaborn) & Supervised Learning(Sci-Kit library) using Python</p>
+                </div>
+              </article>
+              
+          </div>
+
+
+
+
+
+
+
+
+
+          
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/HeartDisease.webp"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Categorical Value based Prediction of Heart Disease using Supervised Learning</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ayush09062004/HeartDiseasePrediction'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Challengesin.webp"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Report on Self-Sustaining Hospital Vision & Challenges in Healthcare</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://drive.google.com/drive/folders/1Venos7AUa6Rs96TDhxBAUz57DqECugV0'"
+              >
+                Drive Link
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/E-commerce.webp"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Non-Core Project: Image Generation for E-commerce using GAN</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ayush09062004/Image-Generation-for-E-commerce'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/ayush09062004/Image-Generation-for-E-commerce'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:ayush.raj.bme22@iitbhu.ac.in">ayush.raj.bme22@iitbhu.ac.in</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Ayush Raj. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
